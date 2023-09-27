@@ -15,11 +15,9 @@ header{
         left: 120px;
     }
     h1{
-        padding: 20px;
         font-size: 80px;
     }
     p{
-        font-size: 25px;
         position: relative;
         left:10%;
     }
@@ -35,10 +33,14 @@ header{
         align-items: center;
         position: relative;
         left: 10%;
+        :hover{
+            transform: scale(1.5);
+        }
         .material-icons{
             position: relative;
             left: 10px;
         }
-       
     }
+
+
 }

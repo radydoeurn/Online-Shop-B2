@@ -1,28 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   width: 100%;
-  background: rgba(22, 67, 92, 0.94);
+  background: rgb(242, 241, 241);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 1;
 }
 nav .nav-left img {
-  height: 50PX;
+  height: 50px;
+  position: relative;
+  left: 30px;
 }
 nav .nav-right ul {
   display: flex;
   align-items: center;
   justify-content: center;
   list-style: none;
-  gap: 20px;
+  gap: 50px;
   position: relative;
   right: 40px;
 }
 nav .nav-right ul li a {
   text-decoration: none;
+  color: black;
+}
+nav .nav-right ul a:hover {
+  background: skyblue;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-family: sans-serif;
 }
 
-* {
-  padding: 0;
-  margin: 0;
+footer {
+  background-color: rgba(22, 67, 92, 0.94);
+  font-family: sans-serif;
+  height: 40vh;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+}
+footer .logo-describe img {
+  width: 100px;
+  padding-left: 120px;
+}
+footer #_image {
+  width: 30px;
+}
+footer #_image:nth-child(4) {
+  padding-bottom: 5px;
+}
+footer .about-us {
+  padding-top: 25px;
+}
+footer .products {
+  padding-top: 25px;
+}
+footer li {
+  padding-top: 10px;
+}
+
+.mian-service {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 30px;
+}
+.mian-service .service {
+  background: rgb(51, 139, 189);
+  color: white;
+  width: 300px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 12px;
+}
+.mian-service .service img {
+  width: 60px;
+}
+.mian-service .service p {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(skyblue, rgba(135, 207, 235, 0.108));
+  border-bottom: 1px solid black;
+}
+header img {
+  width: 50%;
+  position: relative;
+  left: 50%;
+  top: 20px;
+}
+header h1, header p, header button {
+  position: relative;
+  bottom: 300px;
+  left: 120px;
+}
+header h1 {
+  font-size: 80px;
+}
+header p {
+  position: relative;
+  left: 10%;
+}
+header button {
+  width: 10%;
+  background: orange;
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 10%;
+}
+header button :hover {
+  transform: scale(1.5);
+}
+header button .material-icons {
+  position: relative;
+  left: 10px;
 }/*# sourceMappingURL=index.css.map */
