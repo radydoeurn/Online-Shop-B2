@@ -11,6 +11,52 @@ nav {
   height: 50PX;
 }
 
+footer {
+  background-color: rgba(22, 67, 92, 0.94);
+  font-family: sans-serif;
+  height: 40vh;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+}
+footer .logo-describe img {
+  width: 100px;
+  padding-left: 120px;
+}
+footer #_image {
+  width: 30px;
+}
+footer #_image:nth-child(4) {
+  padding-bottom: 5px;
+}
+footer .about-us {
+  padding-top: 25px;
+}
+footer .products {
+  padding-top: 25px;
+}
+footer li {
+  padding-top: 10px;
+}
+
+main {
+  padding-bottom: 50px;
+}
+main .control-card {
+  display: flex;
+  justify-content: space-evenly;
+}
+main .card {
+  border: 1px solid black;
+  width: 350px;
+  height: 400px;
+}
+main .btn {
+  display: flex;
+}
+
 * {
   padding: 0;
   margin: 0;

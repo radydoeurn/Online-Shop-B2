@@ -1,39 +1,32 @@
-@import"variables";
-footer{
-    background-color: $footer;
-    height: 40vh;
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    align-items: center;
-}
-.page_service{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-#logo_image{
-    width: 100px;
-}
-#_image{
-    width: 30px;
-}
-#gmail_image{
-    width: 30px;
-    position: relative;
-    bottom: 5px;
-}
-.contact-list{
-    position: relative;
-    top: 15px;
+@import "variables";
 
-}
-.about-us, .products{
-    position: relative;
-    top: 35px;
-    padding: 10px;
-}
-li{
+footer {
+  background-color: $footer;
+  font-family: sans-serif;
+  height: 40vh;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+
+  .logo-describe img {
+    width: 100px;
+    padding-left: 120px;
+  }
+  #_image{
+    width: 30px;
+  }
+  #_image:nth-child(4){
+    padding-bottom: 5px;
+  }
+  .about-us{
+    padding-top: 25px;
+  }
+  .products{
+    padding-top: 25px;
+  }
+  li{
     padding-top: 10px;
+  }
 }
