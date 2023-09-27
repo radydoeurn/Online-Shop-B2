@@ -1,0 +1,44 @@
+header{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(skyblue,rgba(135, 207, 235, 0.108));
+    border-bottom: 1px solid black;
+    img{
+        width: 50%;
+        position: relative;
+        left: 50%;
+        top: 20px;
+    }
+    h1,p,button {
+        position: relative;
+        bottom: 300px;
+        left: 120px;
+    }
+    h1{
+        padding: 20px;
+        font-size: 80px;
+    }
+    p{
+        font-size: 25px;
+        position: relative;
+        left:10%;
+    }
+    button{
+        width: 10%;
+        background: orange;
+        margin-top: 30px;
+        padding: 15px;
+        border-radius: 12px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 10%;
+        .material-icons{
+            position: relative;
+            left: 10px;
+        }
+       
+    }
+}
