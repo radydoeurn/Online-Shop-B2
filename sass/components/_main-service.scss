@@ -1,2 +1,93 @@
 @import "variables";
-
+@import "card";
+main{
+    width: 100%;
+    font-family: sans-serif;
+    .mian-service{
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        padding-top: 30px;
+        .service{
+            display: flex;
+            flex-direction: row;
+            background: $service;
+            color: white;
+            width: 300px;
+            padding: 5px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 12px;
+            img{
+                width: 60px;
+            }
+            p{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    h2{
+        padding-left: 35px;
+        padding-top: 30px;
+    }
+    .card{
+        display: flex;
+        justify-content: space-evenly;
+        // padding-top: 30px;
+        // padding-bottom: 30px;
+      .electronic-card{
+            border: 1px solid rgba(152, 151, 151, 0.843);
+            background-color: rgba(128, 128, 128, 0.06);
+            height: 500px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            :hover{
+                box-shadow: 0.5px 0.5px 0.5px 0.5px;
+            }
+            img{
+                width: 420px;
+                border-radius: 12px 12px 0px 0px;
+                
+            }
+        }
+        .btn{
+            display: flex;
+            justify-content: space-evenly;
+            i{
+                font-size: 35px;
+                position: relative;
+            }
+        }
+      
+        button{
+            background-color: rgba(128, 128, 128, 0.448);
+            width: 120px;
+            font-size: 15px;
+            border-radius: 8px;
+            border: none;    
+            position: relative;
+            padding: 8px;
+            :hover{
+                transform: scale(1.1);
+                box-shadow: 2px 1px 1px 1px;
+            }
+        }  
+        .group-icons{
+            color: gold;
+        }
+        #electronic{
+            height: 300px;
+        }
+        #cloth{
+            height: 300px;
+        }
+        #vegetable{
+            height: 300px;
+        }
+       
+    }
+}

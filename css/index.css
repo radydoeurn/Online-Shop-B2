@@ -47,6 +47,7 @@ footer {
   justify-content: space-evenly;
   list-style: none;
   align-items: center;
+  padding-top: 30px;
 }
 footer .logo-describe img {
   width: 100px;
@@ -68,17 +69,13 @@ footer li {
   padding-top: 10px;
 }
 
-main {
-  width: 100%;
-  font-family: sans-serif;
-}
-main .card {
+.card {
   display: flex;
   justify-content: space-evenly;
   padding-top: 30px;
   padding-bottom: 40px;
 }
-main .electronic-card {
+.card .electronic-card {
   border: 1px solid rgba(152, 151, 151, 0.843);
   background-color: rgba(128, 128, 128, 0.06);
   height: 500px;
@@ -87,19 +84,19 @@ main .electronic-card {
   flex-direction: column;
   gap: 20px;
 }
-main .electronic-card:hover {
+.card .electronic-card:hover {
   box-shadow: 0.5px 0.5px 0.5px 0.5px;
   transform: scale(1.1);
 }
-main .btn {
+.card .btn {
   display: flex;
   justify-content: space-evenly;
 }
-main .btn i {
+.card .btn i {
   font-size: 35px;
   position: relative;
 }
-main button {
+.card button {
   background-color: rgba(128, 128, 128, 0.448);
   width: 120px;
   font-size: 15px;
@@ -108,27 +105,175 @@ main button {
   position: relative;
   padding: 8px;
 }
-main button:hover {
+.card button :hover {
   transform: scale(1.1);
   box-shadow: 2px 1px 1px 1px;
 }
-main img {
+.card img {
   width: 280px;
   border-radius: 12px 12px 0px 0px;
 }
-main .group-icons {
+.card .group-icons {
   color: gold;
 }
-main #kitchen {
+.card #kitchen {
   height: 300px;
 }
-main #cloth {
+.card #cloth {
   height: 300px;
 }
-main #vegetable {
+.card #vegetable {
   height: 300px;
+}
+.card h2 {
+  position: relative;
+  left: 120px;
+}
+
+main {
+  width: 100%;
+  font-family: sans-serif;
+}
+main .mian-service {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 30px;
+}
+main .mian-service .service {
+  display: flex;
+  flex-direction: row;
+  background: rgb(51, 139, 189);
+  color: white;
+  width: 300px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 12px;
+}
+main .mian-service .service img {
+  width: 60px;
+}
+main .mian-service .service p {
+  display: flex;
+  flex-direction: column;
 }
 main h2 {
+  padding-left: 35px;
+  padding-top: 30px;
+}
+main .card {
+  display: flex;
+  justify-content: space-evenly;
+}
+main .card .electronic-card {
+  border: 1px solid rgba(152, 151, 151, 0.843);
+  background-color: rgba(128, 128, 128, 0.06);
+  height: 500px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .card .electronic-card :hover {
+  box-shadow: 0.5px 0.5px 0.5px 0.5px;
+}
+main .card .electronic-card img {
+  width: 420px;
+  border-radius: 12px 12px 0px 0px;
+}
+main .card .btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+main .card .btn i {
+  font-size: 35px;
+  position: relative;
+}
+main .card button {
+  background-color: rgba(128, 128, 128, 0.448);
+  width: 120px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+  padding: 8px;
+}
+main .card button :hover {
+  transform: scale(1.1);
+  box-shadow: 2px 1px 1px 1px;
+}
+main .card .group-icons {
+  color: gold;
+}
+main .card #electronic {
+  height: 300px;
+}
+main .card #cloth {
+  height: 300px;
+}
+main .card #vegetable {
+  height: 300px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.card .electronic-card {
+  border: 1px solid rgba(152, 151, 151, 0.843);
+  background-color: rgba(128, 128, 128, 0.06);
+  height: 500px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card .electronic-card:hover {
+  box-shadow: 0.5px 0.5px 0.5px 0.5px;
+  transform: scale(1.1);
+}
+.card .btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card .btn i {
+  font-size: 35px;
+  position: relative;
+}
+.card button {
+  background-color: rgba(128, 128, 128, 0.448);
+  width: 120px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+  padding: 8px;
+}
+.card button :hover {
+  transform: scale(1.1);
+  box-shadow: 2px 1px 1px 1px;
+}
+.card img {
+  width: 280px;
+  border-radius: 12px 12px 0px 0px;
+}
+.card .group-icons {
+  color: gold;
+}
+.card #kitchen {
+  height: 300px;
+}
+.card #cloth {
+  height: 300px;
+}
+.card #vegetable {
+  height: 300px;
+}
+.card h2 {
   position: relative;
   left: 120px;
 }
@@ -138,6 +283,7 @@ header {
   height: 500px;
   background: linear-gradient(skyblue, rgba(135, 207, 235, 0.108));
   border-bottom: 1px solid black;
+  font-family: sans-serif;
 }
 header img {
   width: 50%;
