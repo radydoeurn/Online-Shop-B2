@@ -14,16 +14,10 @@ nav {
   z-index: 1;
 }
 nav .nav-left img {
-<<<<<<< HEAD
-  height: 50px;
-  position: relative;
-  left: 30px;
-=======
   height: 65px;
   position: relative;
   left: 30px;
   top: 2px;
->>>>>>> 7607bd9eaf158a4bc998766e4d0b8026733823f2
 }
 nav .nav-right ul {
   display: flex;
@@ -37,14 +31,6 @@ nav .nav-right ul {
 nav .nav-right ul li a {
   text-decoration: none;
   color: black;
-<<<<<<< HEAD
-}
-nav .nav-right ul a:hover {
-  background: skyblue;
-  border-radius: 10px;
-  padding: 8px 12px;
-  font-family: sans-serif;
-=======
   font-size: 25px;
   font-family: sans-serif;
   padding: 15px 12px;
@@ -55,7 +41,6 @@ nav .nav-right ul a:hover {
   transition: 0.3s ease;
   background: skyblue;
   border-radius: 10px;
->>>>>>> 7607bd9eaf158a4bc998766e4d0b8026733823f2
 }
 
 footer {
@@ -160,20 +145,12 @@ footer .contact-icons {
 main {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   font-family: sans-serif;
-=======
->>>>>>> 7607bd9eaf158a4bc998766e4d0b8026733823f2
 }
 main .card-electronic {
   display: flex;
   justify-content: space-evenly;
-<<<<<<< HEAD
   padding-top: 20px;
-=======
-  /* padding-top: 30px;
-  padding-bottom: 40px; */
->>>>>>> 7607bd9eaf158a4bc998766e4d0b8026733823f2
 }
 main .card-electronic .electronic {
   width: 200px;
@@ -183,7 +160,6 @@ main .card-electronic .electronic {
   background-color: rgba(128, 128, 128, 0.06);
   height: 420px;
   border-radius: 12px;
-<<<<<<< HEAD
   gap: 15px;
 }
 main .card-electronic .electronic img {
@@ -192,29 +168,16 @@ main .card-electronic .electronic img {
 main .card-electronic .electronic #electronic {
   width: 200px;
   height: 220px;
-=======
->>>>>>> 7607bd9eaf158a4bc998766e4d0b8026733823f2
 }
 main .card-electronic .electronic .group-icons {
   color: gold;
 }
-<<<<<<< HEAD
 main .card-electronic .electronic .btn {
   display: flex;
   justify-content: space-evenly;
   padding-top: 25px;
 }
 main .card-electronic .electronic button {
-=======
-
-.btn {
-  display: flex;
-  justify-content: space-evenly;
-  padding-top: 15px;
-}
-
-button {
->>>>>>> 7607bd9eaf158a4bc998766e4d0b8026733823f2
   background-color: rgba(128, 128, 128, 0.448);
   width: 80px;
   font-size: 13px;
@@ -222,16 +185,4 @@ button {
   border: none;
   position: relative;
   padding: 5px;
-<<<<<<< HEAD
-=======
-}
-
-img {
-  border-radius: 12px 12px 0px 0px;
-}
-
-#cloth {
-  width: 200px;
-  height: 220px;
->>>>>>> 7607bd9eaf158a4bc998766e4d0b8026733823f2
 }/*# sourceMappingURL=brand2.css.map */

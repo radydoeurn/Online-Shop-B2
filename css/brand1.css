@@ -102,6 +102,7 @@ footer .contact-icons {
 
 .container {
   width: 100%;
+  padding: 50px;
   height: 110vh;
   position: relative;
   bottom: 50px;

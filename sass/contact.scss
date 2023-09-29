@@ -3,17 +3,19 @@
 @import "components/footer";
 
 main {
-    background: pink;
+    background: white;
     position: relative;
     top: 60px;
     height: 60vh;
+    padding: 80px;
 
     .container {
-        width: 100%;
+        width: 1237px;
         background-color: #979292;
-        height: 45vh;
+        height: 55vh;
         position: relative;
-        top: 60px;
+        right: 100px;
+        top: 25px;
         .call {
             display: flex;
             position: relative;
@@ -95,14 +97,14 @@ main {
 
     form {
         background-color: #597586ad;
-        width: 500px;
-        height: 55vh;
+        width: 390px;
+        height: 70vh;
         border-radius: 5px;
         margin: auto;
         margin-bottom: 200px;
         position: relative;
-        bottom: 280px;
-        left: 350px;
+        bottom: 340px;
+        left: 390px;
         h1{
             font-size: 20px;
             position: relative;
@@ -115,7 +117,7 @@ main {
         }
         .name > input{
             padding: 10px;
-            width: 400px;
+            width: 300px;
             position: relative;
             left: 37px;
             margin-top: 15px;
@@ -124,7 +126,7 @@ main {
         }
         .email > input{
             padding: 10px;
-            width: 400px;
+            width: 300px;
             position: relative;
             left: 37px;
             margin-top: 30px;
@@ -133,7 +135,7 @@ main {
         }
         textarea{
             padding: 10px;
-            width: 400px;
+            width: 300px;
             position: relative;
             left: 37px;
             margin-top: 30px;
@@ -142,7 +144,7 @@ main {
         button{
             background-color: #FECB49;
             padding: 10px;
-            width: 420px;
+            width: 320px;
             position: relative;
             left: 37px;
             border-radius: 5px;
