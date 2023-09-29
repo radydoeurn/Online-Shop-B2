@@ -1,0 +1,153 @@
+@import "components/nav";
+@import "components/variables";
+@import "components/footer";
+
+main {
+    background: pink;
+    position: relative;
+    top: 60px;
+    height: 60vh;
+
+    .container {
+        width: 100%;
+        background-color: #979292;
+        height: 45vh;
+        position: relative;
+        top: 60px;
+        .call {
+            display: flex;
+            position: relative;
+            left: 50px;
+
+            .material-icons {
+                font-size: 25px;
+                margin-top: 55px;
+            }
+        }
+        .number-phone {
+            margin-top: 55px;
+
+            label {
+                position: relative;
+                left: 10px;
+                font-size: 25px;
+            }
+
+            p {
+                position: relative;
+                left: 10px;
+                font-size: 15px;
+                margin-bottom: 30px;
+            }
+        }
+
+        .locat {
+            display: flex;
+            position: relative;
+            left: 40px;
+            margin-top: 5px;
+
+            .material-icons {
+                font-size: 25px;
+            }
+        }
+
+        .adress {
+            label {
+                position: relative;
+                left: 10px;
+                font-size: 25px;
+            }
+
+            p {
+                position: relative;
+                left: 10px;
+                font-size: 15px;
+                margin-bottom: 40px;
+            }
+        }
+
+        .hours {
+            display: flex;
+            position: relative;
+            left: 40px;
+
+            .material-icons {
+                font-size: 25px;
+            }
+        }
+
+        .time {
+            label {
+                position: relative;
+                left: 10px;
+                font-size: 25px;
+
+                p {
+                    position: relative;
+                    left: 10px;
+                    font-size: 15px;
+                }
+            }
+
+        }
+    }
+
+    form {
+        background-color: #597586ad;
+        width: 500px;
+        height: 55vh;
+        border-radius: 5px;
+        margin: auto;
+        margin-bottom: 200px;
+        position: relative;
+        bottom: 280px;
+        left: 350px;
+        h1{
+            font-size: 20px;
+            position: relative;
+            left: 37px;
+            padding-top: 26px;
+        }
+        p{
+            position: relative;
+            left: 37px;
+        }
+        .name > input{
+            padding: 10px;
+            width: 400px;
+            position: relative;
+            left: 37px;
+            margin-top: 15px;
+            border-radius: 5px;
+            border: none;
+        }
+        .email > input{
+            padding: 10px;
+            width: 400px;
+            position: relative;
+            left: 37px;
+            margin-top: 30px;
+            border-radius: 5px;
+            border: none;
+        }
+        textarea{
+            padding: 10px;
+            width: 400px;
+            position: relative;
+            left: 37px;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+        button{
+            background-color: #FECB49;
+            padding: 10px;
+            width: 420px;
+            position: relative;
+            left: 37px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 30px;
+        }           
+    }
+}

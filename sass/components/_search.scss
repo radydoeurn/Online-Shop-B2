@@ -1,0 +1,19 @@
+.container{
+    .search{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input{
+            width: 70%;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(225, 164, 164, 0.546);
+        }
+        .material-icons{
+            position: relative;
+            right: 40px;
+        }
+
+    }
+}
