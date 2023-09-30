@@ -90,38 +90,33 @@ main {
   height: 100vh;
   padding: 100px;
 }
-
-form {
-  background-color: rgba(155, 181, 196, 0.7294117647);
-  width: 50%;
+main form {
+  background-color: rgba(128, 128, 128, 0.875);
+  width: 47%;
   position: absolute;
-  left: 25%;
+  left: 30%;
   border-radius: 10px;
+  padding: 5px;
 }
-
-h2 {
+main form h2 {
   text-align: center;
 }
-
-p {
+main form p {
   text-align: center;
   margin-bottom: 40px;
 }
-
-.container-name-gender {
+main form .container-name-gender {
   display: flex;
   position: relative;
   left: 35px;
 }
-
-.full-name {
+main form .full-name {
   width: 40%;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
-
-.full-name > input {
+main form .full-name input {
   padding: 8px;
   border-radius: 5px;
   border: none;
@@ -153,8 +148,7 @@ p {
   display: flex;
   flex-direction: column;
 }
-
-.email > input {
+.email input {
   padding: 8px;
   border-radius: 5px;
   border: none;
@@ -167,8 +161,7 @@ p {
   position: relative;
   left: 50px;
 }
-
-.p-number > input {
+.p-number input {
   padding: 8px;
   border-radius: 5px;
   border: none;
@@ -182,8 +175,7 @@ p {
   left: 35px;
   margin-bottom: 20px;
 }
-
-.address > input {
+.address input {
   padding: 8px;
   border-radius: 5px;
   border: none;
@@ -215,8 +207,7 @@ p {
   position: relative;
   left: 50px;
 }
-
-.district > input {
+.district input {
   padding: 8px;
   border-radius: 5px;
   border: none;
@@ -237,11 +228,15 @@ p {
 
 .image {
   position: relative;
-  left: 350px;
+  left: 200px;
   margin-top: 20px;
 }
-
-.image > img {
+.image :hover {
+  box-shadow: 0px 1px 8px;
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+.image img {
   width: 5%;
   border-radius: 7px;
   margin: 10px;

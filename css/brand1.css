@@ -77,19 +77,19 @@ footer .contact-icons {
   gap: 20px;
 }
 
-.container .search {
+.search {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container .search input {
+.search input {
   width: 70%;
   padding: 15px;
   border-radius: 12px;
   border: 1px solid rgba(225, 164, 164, 0.546);
 }
-.container .search .material-icons {
+.search .material-icons {
   position: relative;
   right: 40px;
 }

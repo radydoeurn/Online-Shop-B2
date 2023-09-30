@@ -11,42 +11,46 @@ main{
     width: 100%;
     height: 100vh;
     padding: 100px;
-}
-form{
-    background-color: #9bb5c4ba;
-    width: 50%;
-    // height: 90vh;
-    // margin: auto;
-    position: absolute;
-    // top: 5%;
-    left: 25%;
-    border-radius: 10px;
+    form{
+        background-color:rgba(128, 128, 128, 0.875);
+        width: 47%;
+        position: absolute;
+        left: 30%;
+        border-radius: 10px;
+        padding: 5px;
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .container-name-gender{
+            display: flex;
+            position: relative;
+            left: 35px;
+        }
+        .full-name{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            input{
+                padding: 8px;
+                border-radius: 5px;
+                border: none;
+              
+            }
+        }
+        
+    }
 
 }
-h2{
-    text-align: center;
-}
-p{
-    text-align: center;
-    margin-bottom: 40px;
-}
-.container-name-gender{
-    display: flex;
-    position: relative;
-    left: 35px;
-}
-.full-name{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-.full-name > input{
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-  
-}
+
+
+
+
+
 
 .gender{
     width: 40%;
@@ -71,12 +75,13 @@ p{
     width: 40%;
     display: flex;
     flex-direction: column;
+    input{
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+    }
 }
-.email > input{
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-}
+
 
 .p-number{
     width: 40%;
@@ -84,12 +89,13 @@ p{
     flex-direction: column;
     position: relative;
     left: 50px;
+    input{
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+    }
 }
-.p-number > input{
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-}
+
 .address{
     width: 88%;
     display: flex;
@@ -97,12 +103,13 @@ p{
     position: relative;
     left: 35px;
     margin-bottom: 20px;
+    input{
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+    }
 }
-.address > input{
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-}
+
 
 .container-city-district{
     display: flex;
@@ -127,11 +134,11 @@ p{
     flex-direction: column;
     position: relative;
     left: 50px;
-}
-.district > input{
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
+    input{
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+    }
 }
 .qualification{
     width: 88%;
@@ -146,11 +153,16 @@ p{
 }
 .image{
     position: relative;
-    left: 350px;
+    left: 200px;
     margin-top: 20px;
-}
-.image > img{
-    width: 5%;
-    border-radius: 7px;
-    margin: 10px;
+    :hover{
+        box-shadow: 0px 1px 8px;
+            transform: scale(1.1);
+            transition: .3s ease;
+    }
+    img{
+        width: 5%;
+        border-radius: 7px;
+        margin: 10px;
+    }
 }
