@@ -13,11 +13,27 @@ nav {
   position: fixed;
   z-index: 1;
 }
+@media screen and (max-width: 620px) {
+  nav {
+    width: 100%;
+    background: rgb(242, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 nav .nav-left img {
   height: 65px;
   position: relative;
   left: 30px;
   top: 2px;
+}
+@media screen and (max-width: 620px) {
+  nav .nav-left img {
+    height: 50px;
+    position: relative;
+    right: 10px;
+  }
 }
 nav .nav-right ul {
   display: flex;
@@ -35,6 +51,13 @@ nav .nav-right ul li a {
   font-family: sans-serif;
   padding: 15px 12px;
 }
+@media screen and (max-width: 620px) {
+  nav .nav-right ul li a {
+    font-size: 10px;
+    position: relative;
+    right: 50px;
+  }
+}
 nav .nav-right ul a:hover {
   box-shadow: 0px 1px 8px;
   transform: scale(1.1);
@@ -44,6 +67,7 @@ nav .nav-right ul a:hover {
 }
 
 footer {
+  width: 100%;
   background-color: rgba(22, 67, 92, 0.94);
   font-family: sans-serif;
   height: 40vh;
@@ -53,6 +77,15 @@ footer {
   list-style: none;
   align-items: center;
   padding-top: 30px;
+}
+@media screen and (max-width: 620px) {
+  footer {
+    height: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 footer .logo-describe img {
   width: 100px;
@@ -67,8 +100,23 @@ footer #_image:nth-child(4) {
 footer .about-us {
   padding-top: 25px;
 }
+@media screen and (max-width: 620px) {
+  footer .about-us {
+    padding: 80px;
+  }
+}
 footer .products {
   padding-top: 25px;
+}
+@media screen and (max-width: 620px) {
+  footer .products {
+    padding: 80px;
+  }
+}
+@media screen and (max-width: 620px) {
+  footer .contact-us .contact-list {
+    display: none;
+  }
 }
 footer li {
   padding-top: 10px;
@@ -97,16 +145,21 @@ footer .contact-icons {
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
 
 .container {
   width: 100%;
   padding: 70px;
-  height: 110vh;
+  height: 155vh;
   position: relative;
   bottom: 50px;
   top: 80px;
+  padding: 30px;
+}
+@media screen and (max-width: 620px) {
+  .container {
+    height: 150vh;
+  }
 }
 .container h2 {
   display: flex;
@@ -117,10 +170,31 @@ footer .contact-icons {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   text-align: center;
   gap: 20px;
 }
-.container .control-card .card {
-  width: 30%;
+@media screen and (max-width: 620px) {
+  .container .control-card {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    left: 100px;
+    gap: 20px;
+  }
+}
+.container .control-card .card img {
+  width: 250px;
+  padding: 50px;
+}
+@media screen and (max-width: 620px) {
+  .container .control-card .card img {
+    width: 100px;
+    padding: 30px;
+  }
 }/*# sourceMappingURL=brand1.css.map */
