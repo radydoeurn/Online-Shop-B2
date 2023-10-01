@@ -10,6 +10,19 @@ main {
     top: 60px;
     height: 60vh;
     padding: 80px;
+    @include responsive ('Tablet'){
+        padding: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    @include responsive(Mobile) {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
     .container {
         width: 1285px;
         background-color: #979292;
@@ -17,11 +30,31 @@ main {
         position: relative;
         right: 100px;
         bottom: 30px;
+        @include responsive ('Tablet') {
+            width: 100%;
+            height: 100%;
+            top: 50px;
+            bottom: 60px;
+            z-index: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            right: 0;
+        }
+        @include responsive(Mobile){
+            width: 100%;
+            right: 0;
+            bottom:0 ;
+            padding: 35px;
+        }
         .call {
             display: flex;
             position: relative;
             left: 50px;
             width: 600px;
+            @include responsive(Mobile){
+                left: 0;
+            }
 
             .material-icons {
                 font-size: 25px;
@@ -30,7 +63,11 @@ main {
         }
         .number-phone {
             margin-top: 55px;
-
+            
+            @include responsive(Mobile){
+                margin: 0;
+                padding-top: 30px;
+            }
             label {
                 position: relative;
                 left: 10px;
@@ -51,6 +88,9 @@ main {
             position: relative;
             left: 40px;
             margin-top: 5px;
+            @include responsive(Mobile){
+                left: 0;
+            }
 
             .material-icons {
                 font-size: 25px;
@@ -76,7 +116,9 @@ main {
             display: flex;
             position: relative;
             left: 40px;
-
+            @include responsive(Mobile){
+                left: 0;
+            }
             .material-icons {
                 font-size: 25px;
             }
@@ -101,22 +143,53 @@ main {
     form {
         background-color: #597586ad;
         width: 390px;
-        height: 65vh;
+        height: 55vh;
         border-radius: 5px;
-        margin: auto;
-        margin-bottom: 200px;
         position: relative;
-        left: 340px;
-        bottom: 395px;
+        margin: auto;
+        margin-bottom: 10px;
+        left: 380px;
+        bottom:368px;
+        @include responsive('Tablet'){
+            left: 20%;
+            bottom: 90%;
+            padding-bottom: 50px;
+            padding-top: 20px;
+            height: auto;
+            z-index: 3;
+        }
+        @include responsive(Mobile) {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            left:0px;
+            bottom: 0px;
+            padding-right: 35px;
+            margin: 0;
+        }
         h1{
             font-size: 20px;
             position: relative;
             left: 37px;
             padding-top: 26px;
+            @include responsive(Mobile){
+                left: 0;
+                width: 100%;
+            }
         }
         p{
             position: relative;
             left: 37px;
+            @include responsive(Mobile){
+                left: 0;
+                width: 100%;
+            }
         }
         .name > input{
             padding: 10px;
@@ -126,6 +199,11 @@ main {
             margin-top: 15px;
             border-radius: 5px;
             border: none;
+            @include responsive(Mobile){
+                padding: 15px;
+                width: 100%;
+                left: 0;
+            }
         }
         .email > input{
             padding: 10px;
@@ -135,6 +213,11 @@ main {
             margin-top: 30px;
             border-radius: 5px;
             border: none;
+            @include responsive(Mobile){
+                width: 100%;
+                padding: 15px;
+                left: 0;
+            }
         }
         textarea{
             padding: 10px;
@@ -143,6 +226,11 @@ main {
             left: 37px;
             margin-top: 30px;
             border-radius: 5px;
+            @include responsive(Mobile){
+                width: 100%;
+                left: 0;
+                padding: 15px;
+            }
         }
         button{
             background-color: #FECB49;
@@ -153,13 +241,29 @@ main {
             border-radius: 5px;
             border: none;
             margin-top: 30px;
+            @include responsive(Mobile){
+                width: 80%;
+                left: 0;
+                padding: 15px;
+                position: absolute;
+                left: 25px;
+                bottom:60px;
+            }
         }           
     }
 }
 .google img {
-    position: relative;
-    top: 50px;
-    left: 90px;
+    // position: relative;
+    // top: 50px;
+    // left: 90px;
+    display: flex;
+    @include responsive ('Tablet') {
+        margin-top: 200px;
+    }
+    @include responsive(Mobile){
+        top: 0;
+        left: 0;
+    }
 
 }
 
