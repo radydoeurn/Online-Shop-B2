@@ -14,9 +14,10 @@ nav {
   z-index: 1;
 }
 nav .nav-left img {
-  height: 50px;
+  height: 65px;
   position: relative;
   left: 30px;
+  top: 2px;
 }
 nav .nav-right ul {
   display: flex;
@@ -30,12 +31,16 @@ nav .nav-right ul {
 nav .nav-right ul li a {
   text-decoration: none;
   color: black;
+  font-size: 25px;
+  font-family: sans-serif;
+  padding: 15px 12px;
 }
 nav .nav-right ul a:hover {
+  box-shadow: 0px 1px 8px;
+  transform: scale(1.1);
+  transition: 0.3s ease;
   background: skyblue;
   border-radius: 10px;
-  padding: 8px 12px;
-  font-family: sans-serif;
 }
 
 footer {
@@ -137,17 +142,17 @@ footer .contact-icons {
   left: 120px;
 }
 
-main {
+#electronic-machine, #clothes-manwoman, #vegetable, #ingredients, #books {
   display: flex;
   flex-direction: column;
   font-family: sans-serif;
 }
-main .card-electronic {
+#electronic-machine .card-electronic, #clothes-manwoman .card-electronic, #vegetable .card-electronic, #ingredients .card-electronic, #books .card-electronic {
   display: flex;
   justify-content: space-evenly;
   padding-top: 20px;
 }
-main .card-electronic .electronic {
+#electronic-machine .card-electronic .electronic, #clothes-manwoman .card-electronic .electronic, #vegetable .card-electronic .electronic, #ingredients .card-electronic .electronic, #books .card-electronic .electronic {
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -157,27 +162,27 @@ main .card-electronic .electronic {
   border-radius: 12px;
   gap: 15px;
 }
-main .card-electronic .electronic img {
+#electronic-machine .card-electronic .electronic img, #clothes-manwoman .card-electronic .electronic img, #vegetable .card-electronic .electronic img, #ingredients .card-electronic .electronic img, #books .card-electronic .electronic img {
   border-radius: 12px 12px 0px 0px;
 }
-main .card-electronic .electronic #electronic {
+#electronic-machine .card-electronic .electronic #electronic, #clothes-manwoman .card-electronic .electronic #electronic, #vegetable .card-electronic .electronic #electronic, #ingredients .card-electronic .electronic #electronic, #books .card-electronic .electronic #electronic {
   width: 200px;
   height: 220px;
 }
-main .card-electronic .electronic .group-icons {
+#electronic-machine .card-electronic .electronic .group-icons, #clothes-manwoman .card-electronic .electronic .group-icons, #vegetable .card-electronic .electronic .group-icons, #ingredients .card-electronic .electronic .group-icons, #books .card-electronic .electronic .group-icons {
   color: gold;
 }
-main .card-electronic .electronic .btn {
+#electronic-machine .card-electronic .electronic .btn, #clothes-manwoman .card-electronic .electronic .btn, #vegetable .card-electronic .electronic .btn, #ingredients .card-electronic .electronic .btn, #books .card-electronic .electronic .btn {
   display: flex;
   justify-content: space-evenly;
   padding-top: 25px;
 }
-main .card-electronic .electronic button {
+#electronic-machine .card-electronic .electronic button, #clothes-manwoman .card-electronic .electronic button, #vegetable .card-electronic .electronic button, #ingredients .card-electronic .electronic button, #books .card-electronic .electronic button {
   background-color: rgba(128, 128, 128, 0.448);
   width: 80px;
-  font-size: 13px;
+  font-size: 13.5px;
   border-radius: 8px;
   border: none;
   position: relative;
-  padding: 5px;
+  padding: 12px;
 }/*# sourceMappingURL=brand2.min.css.map */
