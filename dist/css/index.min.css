@@ -14,14 +14,34 @@ nav {
   position: fixed;
   z-index: 1;
 }
+@media screen and (max-width: 600px) {
+  nav {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+}
 nav .nav-left img {
   height: 65px;
   flex: 0.7;
   position: relative;
   top: 2px;
 }
+@media screen and (max-width: 600px) {
+  nav .nav-left img {
+    flex: 0.3;
+    height: 45px;
+  }
+}
 nav .nav-right {
   flex: 1.3;
+}
+@media screen and (max-width: 600px) {
+  nav .nav-right {
+    flex: 1.7;
+  }
 }
 nav .nav-right ul {
   display: flex;
@@ -37,7 +57,13 @@ nav .nav-right ul li a {
   font-family: sans-serif;
   padding: 15px 12px;
 }
-nav .nav-right a:hover {
+@media screen and (max-width: 600px) {
+  nav .nav-right ul li a {
+    font-size: 15px;
+    padding: 5px 7px;
+  }
+}
+nav a:hover {
   box-shadow: 0px 1px 8px;
   transform: scale(1.1);
   transition: 0.3s ease;
@@ -57,50 +83,64 @@ footer {
   align-items: center;
   padding-top: 30px;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) {
   footer {
-    height: 120vh;
+    height: 60vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 }
-footer .logo-describe img {
+
+.logo-describe img {
   width: 100px;
   padding-left: 120px;
 }
-footer #_image {
+@media screen and (max-width: 600px) {
+  .logo-describe img {
+    padding: 10px;
+  }
+}
+
+#_image {
   width: 30px;
 }
-footer #_image:nth-child(4) {
+
+#_image:nth-child(4) {
   padding-bottom: 5px;
 }
-footer .about-us {
+
+.about-us {
   padding-top: 25px;
 }
-@media screen and (max-width: 320px) {
-  footer .about-us {
-    padding: 80px;
+@media screen and (max-width: 600px) {
+  .about-us {
+    padding: 15px;
   }
 }
-footer .products {
+
+.products {
   padding-top: 25px;
 }
-@media screen and (max-width: 320px) {
-  footer .products {
-    padding: 80px;
+@media screen and (max-width: 600px) {
+  .products {
+    padding: 15px;
   }
 }
-@media screen and (max-width: 320px) {
-  footer .contact-us .contact-list {
+
+li {
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-us .contact-list {
     display: none;
   }
 }
-footer li {
-  padding-top: 10px;
-}
-footer .contact-icons {
+
+.contact-icons {
   gap: 20px;
 }
 
@@ -164,9 +204,10 @@ footer .contact-icons {
   height: 200px;
   width: 300px;
 }
-.card h2 {
+
+main h2 {
   position: relative;
-  left: 120px;
+  left: 70px;
 }
 
 main {
@@ -312,9 +353,10 @@ main .card #vegetable {
   height: 200px;
   width: 300px;
 }
-.card h2 {
+
+main h2 {
   position: relative;
-  left: 120px;
+  left: 70px;
 }
 
 header {
@@ -366,4 +408,11 @@ header button :hover {
 header button .material-icons {
   position: relative;
   left: 10px;
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    position: 0;
+    align-items: center;
+  }
 }/*# sourceMappingURL=index.min.css.map */
