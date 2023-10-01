@@ -10,14 +10,6 @@ main {
     top: 60px;
     height: 60vh;
     padding: 80px;
-    @include responsive(Mobile){
-        height: 130vh;
-        position: relative;
-        top: 125px;
-        padding-top: 90px;
-    }
-    
-
     .container {
         width: 1285px;
         background-color: #979292;
@@ -25,12 +17,6 @@ main {
         position: relative;
         right: 100px;
         bottom: 30px;
-        @include responsive(Mobile){
-            width: 510px;
-            position: relative;
-            top: 375px;
-            right:25px;
-        }
         .call {
             display: flex;
             position: relative;
@@ -101,17 +87,11 @@ main {
                 position: relative;
                 left: 10px;
                 font-size: 25px;
-                @include responsive(Mobile){
-                   font-size: 20px;
-                }
 
                 p {
                     position: relative;
                     left: 10px;
                     font-size: 15px;
-                    @include responsive(Mobile){
-                        font-size: 10px;
-                    }
                 }
             }
 
@@ -126,15 +106,8 @@ main {
         margin: auto;
         margin-bottom: 200px;
         position: relative;
+        left: 340px;
         bottom: 395px;
-        left: 420px;
-        @include responsive(Mobile){
-            padding: 60px;
-            width: 390px;
-            position: relative;
-            left:-70px;
-            bottom: 470px;
-        }
         h1{
             font-size: 20px;
             position: relative;
