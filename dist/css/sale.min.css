@@ -5,6 +5,7 @@
 
 nav {
   width: 100%;
+  flex: 2;
   background: rgb(242, 241, 241);
   display: flex;
   flex-direction: row;
@@ -15,18 +16,19 @@ nav {
 }
 nav .nav-left img {
   height: 65px;
+  flex: 0.7;
   position: relative;
-  left: 30px;
   top: 2px;
+}
+nav .nav-right {
+  flex: 1.3;
 }
 nav .nav-right ul {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   list-style: none;
-  gap: 50px;
-  position: relative;
-  right: 40px;
+  gap: 30px;
 }
 nav .nav-right ul li a {
   text-decoration: none;
@@ -35,7 +37,7 @@ nav .nav-right ul li a {
   font-family: sans-serif;
   padding: 15px 12px;
 }
-nav .nav-right ul a:hover {
+nav .nav-right a:hover {
   box-shadow: 0px 1px 8px;
   transform: scale(1.1);
   transition: 0.3s ease;
@@ -44,6 +46,7 @@ nav .nav-right ul a:hover {
 }
 
 footer {
+  width: 100%;
   background-color: rgba(22, 67, 92, 0.94);
   font-family: sans-serif;
   height: 40vh;
@@ -53,6 +56,15 @@ footer {
   list-style: none;
   align-items: center;
   padding-top: 30px;
+}
+@media screen and (max-width: 320px) {
+  footer {
+    height: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 footer .logo-describe img {
   width: 100px;
@@ -67,8 +79,23 @@ footer #_image:nth-child(4) {
 footer .about-us {
   padding-top: 25px;
 }
+@media screen and (max-width: 320px) {
+  footer .about-us {
+    padding: 80px;
+  }
+}
 footer .products {
   padding-top: 25px;
+}
+@media screen and (max-width: 320px) {
+  footer .products {
+    padding: 80px;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer .contact-us .contact-list {
+    display: none;
+  }
 }
 footer li {
   padding-top: 10px;
@@ -98,25 +125,25 @@ main form {
   border-radius: 10px;
   padding: 5px;
 }
-main form h2 {
+main h2 {
   text-align: center;
 }
-main form p {
+main p {
   text-align: center;
   margin-bottom: 40px;
 }
-main form .container-name-gender {
+main .container-name-gender {
   display: flex;
   position: relative;
   left: 35px;
 }
-main form .full-name {
+main .full-name {
   width: 40%;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
-main form .full-name input {
+main .full-name input {
   padding: 8px;
   border-radius: 5px;
   border: none;

@@ -5,6 +5,7 @@
 
 nav {
   width: 100%;
+  flex: 2;
   background: rgb(242, 241, 241);
   display: flex;
   flex-direction: row;
@@ -15,18 +16,19 @@ nav {
 }
 nav .nav-left img {
   height: 65px;
+  flex: 0.7;
   position: relative;
-  left: 30px;
   top: 2px;
+}
+nav .nav-right {
+  flex: 1.3;
 }
 nav .nav-right ul {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   list-style: none;
-  gap: 50px;
-  position: relative;
-  right: 40px;
+  gap: 30px;
 }
 nav .nav-right ul li a {
   text-decoration: none;
@@ -35,7 +37,7 @@ nav .nav-right ul li a {
   font-family: sans-serif;
   padding: 15px 12px;
 }
-nav .nav-right ul a:hover {
+nav .nav-right a:hover {
   box-shadow: 0px 1px 8px;
   transform: scale(1.1);
   transition: 0.3s ease;
@@ -44,6 +46,7 @@ nav .nav-right ul a:hover {
 }
 
 footer {
+  width: 100%;
   background-color: rgba(22, 67, 92, 0.94);
   font-family: sans-serif;
   height: 40vh;
@@ -53,6 +56,15 @@ footer {
   list-style: none;
   align-items: center;
   padding-top: 30px;
+}
+@media screen and (max-width: 320px) {
+  footer {
+    height: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 footer .logo-describe img {
   width: 100px;
@@ -67,8 +79,23 @@ footer #_image:nth-child(4) {
 footer .about-us {
   padding-top: 25px;
 }
+@media screen and (max-width: 320px) {
+  footer .about-us {
+    padding: 80px;
+  }
+}
 footer .products {
   padding-top: 25px;
+}
+@media screen and (max-width: 320px) {
+  footer .products {
+    padding: 80px;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer .contact-us .contact-list {
+    display: none;
+  }
 }
 footer li {
   padding-top: 10px;
@@ -142,17 +169,35 @@ footer .contact-icons {
   left: 120px;
 }
 
-#electronic-machine, #clothes-manwoman, #vegetable, #ingredients, #books {
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search input {
+  width: 70%;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(225, 164, 164, 0.546);
+}
+.search .material-icons {
+  position: relative;
+  right: 40px;
+}
+
+#electronic-machine, #clothes-manwoman, #vegetable, #ingredients, #books, #foods {
   display: flex;
   flex-direction: column;
   font-family: sans-serif;
+  margin-top: 100px;
 }
-#electronic-machine .card-electronic, #clothes-manwoman .card-electronic, #vegetable .card-electronic, #ingredients .card-electronic, #books .card-electronic {
+#electronic-machine .card-electronic, #clothes-manwoman .card-electronic, #vegetable .card-electronic, #ingredients .card-electronic, #books .card-electronic, #foods .card-electronic {
   display: flex;
   justify-content: space-evenly;
   padding-top: 20px;
 }
-#electronic-machine .card-electronic .electronic, #clothes-manwoman .card-electronic .electronic, #vegetable .card-electronic .electronic, #ingredients .card-electronic .electronic, #books .card-electronic .electronic {
+#electronic-machine .card-electronic .electronic, #clothes-manwoman .card-electronic .electronic, #vegetable .card-electronic .electronic, #ingredients .card-electronic .electronic, #books .card-electronic .electronic, #foods .card-electronic .electronic {
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -162,22 +207,22 @@ footer .contact-icons {
   border-radius: 12px;
   gap: 15px;
 }
-#electronic-machine .card-electronic .electronic img, #clothes-manwoman .card-electronic .electronic img, #vegetable .card-electronic .electronic img, #ingredients .card-electronic .electronic img, #books .card-electronic .electronic img {
+#electronic-machine .card-electronic .electronic img, #clothes-manwoman .card-electronic .electronic img, #vegetable .card-electronic .electronic img, #ingredients .card-electronic .electronic img, #books .card-electronic .electronic img, #foods .card-electronic .electronic img {
   border-radius: 12px 12px 0px 0px;
 }
-#electronic-machine .card-electronic .electronic #electronic, #clothes-manwoman .card-electronic .electronic #electronic, #vegetable .card-electronic .electronic #electronic, #ingredients .card-electronic .electronic #electronic, #books .card-electronic .electronic #electronic {
+#electronic-machine .card-electronic .electronic #electronic, #clothes-manwoman .card-electronic .electronic #electronic, #vegetable .card-electronic .electronic #electronic, #ingredients .card-electronic .electronic #electronic, #books .card-electronic .electronic #electronic, #foods .card-electronic .electronic #electronic {
   width: 200px;
   height: 220px;
 }
-#electronic-machine .card-electronic .electronic .group-icons, #clothes-manwoman .card-electronic .electronic .group-icons, #vegetable .card-electronic .electronic .group-icons, #ingredients .card-electronic .electronic .group-icons, #books .card-electronic .electronic .group-icons {
+#electronic-machine .card-electronic .electronic .group-icons, #clothes-manwoman .card-electronic .electronic .group-icons, #vegetable .card-electronic .electronic .group-icons, #ingredients .card-electronic .electronic .group-icons, #books .card-electronic .electronic .group-icons, #foods .card-electronic .electronic .group-icons {
   color: gold;
 }
-#electronic-machine .card-electronic .electronic .btn, #clothes-manwoman .card-electronic .electronic .btn, #vegetable .card-electronic .electronic .btn, #ingredients .card-electronic .electronic .btn, #books .card-electronic .electronic .btn {
+#electronic-machine .card-electronic .electronic .btn, #clothes-manwoman .card-electronic .electronic .btn, #vegetable .card-electronic .electronic .btn, #ingredients .card-electronic .electronic .btn, #books .card-electronic .electronic .btn, #foods .card-electronic .electronic .btn {
   display: flex;
   justify-content: space-evenly;
   padding-top: 25px;
 }
-#electronic-machine .card-electronic .electronic button, #clothes-manwoman .card-electronic .electronic button, #vegetable .card-electronic .electronic button, #ingredients .card-electronic .electronic button, #books .card-electronic .electronic button {
+#electronic-machine .card-electronic .electronic button, #clothes-manwoman .card-electronic .electronic button, #vegetable .card-electronic .electronic button, #ingredients .card-electronic .electronic button, #books .card-electronic .electronic button, #foods .card-electronic .electronic button {
   background-color: rgba(128, 128, 128, 0.448);
   width: 80px;
   font-size: 13.5px;

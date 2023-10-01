@@ -1,10 +1,12 @@
 @import "components/nav";
 @import "components/footer";
 @import "components/card";
-#electronic-machine, #clothes-manwoman, #vegetable, #ingredients, #books{
+@import "components/search";
+#electronic-machine, #clothes-manwoman, #vegetable, #ingredients, #books, #foods{
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
+    margin-top: 100px;
     .card-electronic{
         display: flex;
         justify-content: space-evenly;
