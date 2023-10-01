@@ -204,9 +204,10 @@ li {
   height: 200px;
   width: 300px;
 }
-.card h2 {
+
+main h2 {
   position: relative;
-  left: 120px;
+  left: 70px;
 }
 
 main {
@@ -352,9 +353,10 @@ main .card #vegetable {
   height: 200px;
   width: 300px;
 }
-.card h2 {
+
+main h2 {
   position: relative;
-  left: 120px;
+  left: 70px;
 }
 
 header {
@@ -406,4 +408,11 @@ header button :hover {
 header button .material-icons {
   position: relative;
   left: 10px;
+}
+
+@media screen and (max-width: 720px) {
+  header {
+    position: 0;
+    align-items: center;
+  }
 }/*# sourceMappingURL=index.css.map */
