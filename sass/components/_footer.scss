@@ -1,6 +1,7 @@
 @import "variables";
 
 footer {
+  width: 100%;
   background-color: $footer;
   font-family: sans-serif;
   height: 40vh;
@@ -10,6 +11,13 @@ footer {
   list-style: none;
   align-items: center;
   padding-top: 30px;
+  @include responsive(Mobile){
+    height: 120vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
   .logo-describe img {
     width: 100px;
@@ -23,9 +31,23 @@ footer {
   }
   .about-us{
     padding-top: 25px;
+    @include responsive(Mobile){
+      padding: 80px;
+    }
   }
   .products{
     padding-top: 25px;
+    @include responsive(Mobile){
+      padding: 80px;
+    }
+  }
+  .contact-us{
+    .contact-list{
+      @include responsive(Mobile){
+        display: none;
+      }
+    }
+    
   }
   li{
     padding-top: 10px;
