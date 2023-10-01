@@ -11,50 +11,56 @@ footer {
   list-style: none;
   align-items: center;
   padding-top: 30px;
-  @include responsive(Mobile){
-    height: 120vh;
+  @include responsive(Mobile) {
+    height: 60vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
 }
 
-  .logo-describe img {
-    width: 100px;
-    padding-left: 120px;
-  }
-  #_image{
-    width: 30px;
-  }
-  #_image:nth-child(4){
-    padding-bottom: 5px;
-  }
-  .about-us{
-    padding-top: 25px;
-    @include responsive(Mobile){
-      padding: 80px;
-    }
-  }
-  .products{
-    padding-top: 25px;
-    @include responsive(Mobile){
-      padding: 80px;
-    }
-  }
-  .contact-us{
-    .contact-list{
-      @include responsive(Mobile){
-        display: none;
-      }
-    }
-    
-  }
-  li{
-    padding-top: 10px;
-  }
-  .contact-icons{
-    gap: 20px;
-    // padding-left: 40px;
-  }
+.logo-describe img {
+  width: 100px;
+  padding-left: 120px;
+  @include responsive(Mobile) {
+    padding: 10px;
+ }
+}
 
+#_image {
+  width: 30px;
+}
+
+#_image:nth-child(4) {
+  padding-bottom: 5px;
+}
+
+.about-us {
+  padding-top: 25px;
+  @include responsive(Mobile) {
+   padding: 15px;
+}
+}
+
+.products {
+  padding-top: 25px;
+  @include responsive(Mobile) {
+    padding: 15px;
+ }
+}
+
+li {
+  padding-top: 10px;
+}
+.contact-us{
+  .contact-list{
+    @include responsive(Mobile) {
+      display: none;
+   }
+  }
+}
+.contact-icons {
+  gap: 20px;
 }

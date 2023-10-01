@@ -14,8 +14,10 @@
     bottom: 50px;
     top: 80px;
     padding: 30px;
-    @include responsive(Mobile){
-        height: 150vh;
+    @include responsive(Mobile) {
+       padding: 5px;
+       height: 110vh;
+
     }
     h2{
         display: flex;
@@ -31,24 +33,14 @@
         flex-wrap: wrap;
         text-align: center;
         gap: 20px;
-        @include responsive(Mobile){
-            width: 65%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-            position: relative;
-            left: 100px;
-            gap: 20px;
-        }
         .card img{
            width: 250px;
            padding: 50px;
-            @include responsive(Mobile){
-                width: 100px;
-                padding: 30px;
-            }
+           @include responsive(Mobile) {
+            width: 100px;
+            padding: 20px;
+    
+        }
         }
     }
 
